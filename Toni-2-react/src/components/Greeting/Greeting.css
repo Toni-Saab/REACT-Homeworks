@@ -1,0 +1,24 @@
+.greeting-block {
+  background-color: #55acee;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.2rem;
+  align-items: baseline;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.hey-pixel {
+  font-size: 1rem;
+  color: #fff;
+  margin-right: 0.4rem;
+  font-family: 'Minecraft', sans-serif;
+}
+
+.name-cube {
+  font-size: 1.4rem;
+  color: #f0e68c;
+  font-weight: bold;
+  font-family: 'Minecraft', sans-serif;
+  text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.4);
+}

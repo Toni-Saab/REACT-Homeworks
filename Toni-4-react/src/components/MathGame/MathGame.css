@@ -1,0 +1,87 @@
+:root {
+  --math-bg: #4a148c;
+  --math-text: #f3e5f5;
+  --math-accent: #00bfa5;
+  --input-bg: #7b1fa2;
+  --input-text: #fff;
+  --button-bg: #1e88e5;
+  --button-text: #fff;
+  --score-color: #a7ffeb;
+  --error-color: #ffcdd2;
+}
+
+.math-challenge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--math-bg);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.6);
+}
+
+.problem-block {
+  font-size: 3rem;
+  color: var(--math-text);
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+.number-a,
+.number-b {
+  font-weight: bold;
+}
+
+.operator,
+.equal {
+  margin: 0 1rem;
+}
+
+.answer-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.answer-input {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 0.2rem solid var(--math-accent);
+  border-radius: 0.3rem;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  width: 8rem;
+  text-align: center;
+}
+
+.submit-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #1565c0;
+}
+
+.score-board {
+  font-size: 1.5rem;
+  color: var(--score-color);
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.score-value {
+  font-weight: bold;
+  color: var(--math-text);
+}
+
+.result-message {
+  font-style: italic;
+  color: var(--error-color);
+  font-size: 1.1rem;
+}

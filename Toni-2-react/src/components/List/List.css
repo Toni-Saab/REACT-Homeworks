@@ -1,0 +1,42 @@
+.chest-block {
+  background-color: #deb887;
+  color: #333;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.chest-label {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #a0522d;
+  font-family: 'Minecraft', sans-serif;
+  text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.4);
+}
+
+.item-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 0.5rem;
+}
+
+.item-voxel {
+  background-color: #f5f5dc;
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  font-family: 'Minecraft', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+.empty-chest {
+  color: #d2691e;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: 'Minecraft', sans-serif;
+}

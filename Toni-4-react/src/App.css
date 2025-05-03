@@ -1,0 +1,87 @@
+:root {
+  --bg-color: #303030;
+  --text-color: #f0f0f0;
+  --button-border: #555;
+  --button-radius: 0.3rem;
+  --header-color: #fdd835;
+  --accent-color-city: #81d4fa;
+  --accent-color-math: #e91e63;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.world-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95vw;
+  height: 95vh;
+}
+
+.game-selector {
+  display: flex;
+  gap: 3rem;
+}
+
+.game-button {
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  border: 0.2rem solid var(--button-border);
+  border-radius: var(--button-radius);
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.game-button:hover {
+  transform: scale(1.05);
+}
+
+.city-mode {
+  background-color: var(--accent-color-city);
+  color: #222;
+  box-shadow: 0.2rem 0.2rem 0.4rem var(--shadow-color);
+}
+
+.math-mode {
+  background-color: var(--accent-color-math);
+  color: var(--text-color);
+  box-shadow: 0.2rem 0.2rem 0.4rem var(--shadow-color);
+}
+
+.back-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: 0.2rem solid var(--button-border);
+  border-radius: var(--button-radius);
+  background-color: #444;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #222;
+}
+
+@media (min-width: 1920px) {
+  html {
+      font-size: 24px;
+  }
+}

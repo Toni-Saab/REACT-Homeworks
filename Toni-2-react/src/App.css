@@ -1,0 +1,66 @@
+body {
+  font-family: 'Minecraft', sans-serif;
+  background-color: #77d1f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.world-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 1.5rem;
+}
+
+.sky-top {
+  padding: 1rem 0;
+  border-bottom: 0.2rem dashed #b0e0e6;
+}
+
+.ground-level {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.inventory-zone {
+  padding: 1rem;
+  background-color: #a0522d;
+  border-radius: 0.2rem;
+}
+
+.orders-board {
+  padding: 1rem;
+  background-color: #a0522d;
+  border-radius: 0.2rem;
+}
+
+.bedrock-bottom {
+  padding-top: 1rem;
+  border-top: 0.2rem dashed #b0e0e6;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media (min-width: 1920px) {
+  html {
+      font-size: 24px;
+  }
+}
