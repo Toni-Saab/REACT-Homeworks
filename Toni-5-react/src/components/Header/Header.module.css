@@ -1,0 +1,9 @@
+.header {
+    margin-top: 3.45rem;
+}
+
+.header__logo {
+    height: 2.75rem;
+    width: auto;
+    margin-left: 2.25rem;
+}

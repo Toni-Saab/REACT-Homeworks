@@ -1,0 +1,39 @@
+.sign-in-methods {
+    display: flex;
+    justify-content: center;
+    gap: 1.125rem;
+    border: 3px solid rgb(30, 215, 96);
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 2.25rem 3.5rem;
+}
+.main__sign-in-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.125rem;
+    height: 6.125rem;
+    border-radius: 1.875rem;
+    background-color:rgb(30, 215, 96);
+    cursor: pointer;
+    transition: transform 0.2s ease,
+                background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+.main__sign-in-button:hover {
+    background-color: #1181f1;
+    transform: translateY(-0.8rem);
+    box-shadow: 0 1rem 2rem rgba(0, 123, 255, 0.3);
+}
+.main__sign-in-icon-apple {
+    width: 3.125rem;
+    height: 3.75rem;
+}
+.main__sign-in-icon-google {
+    width: 4.375rem;
+    height: 4.45rem;
+}
+.main__sign-in-icon-twitterX {
+    width: 4.625rem;
+    height: 4.125rem;
+}

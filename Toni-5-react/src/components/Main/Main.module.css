@@ -1,0 +1,27 @@
+.main {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__title {
+    text-align: center;
+    color: rgb(30, 215, 96);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.75rem;
+}
+
+.main__sign-in-text {
+    margin-top: 2rem;
+    text-align: center;
+    color: rgb(30, 215, 96);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.375rem;
+}
+
+.main__sign-in-methods {
+    margin-top: 2rem;
+}
