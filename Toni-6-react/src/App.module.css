@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'Rubik';
+	src:
+		url(./fonts/Rubik/Rubik-Light.woff2), format('woff2');
+	font-style: normal;
+	font-display: block;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  font-size: 12.8px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding: 2rem;
+}
+
+
+
+
+@media (max-width: 25000px) { html { font-size: 234.33px; } }
+@media (max-width: 20480px) { html { font-size: 192.19px; } }
+@media (max-width: 15360px) { html { font-size: 144.14px; } }
+@media (max-width: 12288px) { html { font-size: 115.31px; } }
+@media (max-width: 10240px) { html { font-size: 96.09px; } }
+@media (max-width: 8192px) { html { font-size: 76.87px; } }
+@media (max-width: 7680px) { html { font-size: 72.07px; } }
+@media (max-width: 5760px) { html { font-size: 54.05px; } }
+@media (max-width: 5120px) { html { font-size: 48.05px; } }
+@media (max-width: 4096px) { html { font-size: 38.44px; } }
+@media (max-width: 3840px) { html { font-size: 36.03px; } }
+@media (max-width: 3200px) { html { font-size: 30.03px; } }
+@media (max-width: 2560px) { html { font-size: 24.02px; } }
+@media (max-width: 2048px) { html { font-size: 19.22px; } }
+@media (max-width: 1920px) { html { font-size: 18.02px; } }
+@media (max-width: 1680px) { html { font-size: 15.76px; } }
+@media (max-width: 1536px) { html { font-size: 14.41px; } }
+@media (max-width: 1440px) { html { font-size: 13.51px; } }
+@media (max-width: 1280px) { html { font-size: 12.01px; } }
+@media (max-width: 1024px) { html { font-size: 9.61px; } }
+@media (max-width: 800px) { html { font-size: 7.50px; } }
+@media (max-width: 720px) { html { font-size: 6.76px; } }
+@media (max-width: 640px) { html { font-size: 6.01px; } }
+@media (max-width: 540px) { html { font-size: 5.06px; } }
+@media (max-width: 480px) { html { font-size: 4.50px; } }
+@media (max-width: 430px) { html { font-size: 4.04px; } }
+@media (max-width: 393px) { html { font-size: 3.69px; } }
+@media (max-width: 390px) { html { font-size: 3.66px; } }
+@media (max-width: 360px) { html { font-size: 3.38px; } }
+@media (max-width: 320px) { html { font-size: 3.00px; } }

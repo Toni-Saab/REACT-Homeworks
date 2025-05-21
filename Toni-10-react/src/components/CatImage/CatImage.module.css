@@ -1,0 +1,74 @@
+:root {
+  --bg-color: #111;
+  --accent-color: #00f5d4;
+  --accent-hover: #0bf2c2;
+  --border-radius: 0;
+  --text-color: #fff;
+  --max-width: 80%;
+  --img-width: 35rem;
+  --img-height: 35rem;
+  --spacing: 2rem;
+  --font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing);
+  gap: var(--spacing);
+  background-color: var(--bg-color);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.image,
+.loadingImage {
+  width: 100%;
+  max-width: var(--img-width);
+  height: var(--img-height);
+  object-fit: contain;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 1rem var(--accent-color);
+  border: 0.125rem solid var(--accent-color);
+  background-color: #222;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  font-size: var(--font-size);
+  font-weight: bold;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  width: 100%;
+  max-width: var(--img-width);
+}
+
+.button:hover:not(:disabled) {
+  background-color: var(--accent-hover);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--accent-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-shadow: 0 0 0.3125rem var(--accent-color);
+  user-select: none;
+  width: 100%;
+  max-width: var(--img-width);
+}
