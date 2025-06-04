@@ -1,0 +1,88 @@
+.articlesList {
+  padding: 4rem 3rem;
+  background-color: var(--color-dark-accent);
+  border: 0.2rem solid var(--color-primary-red);
+  box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.7);
+  max-width: 70rem;
+  margin-top: 5rem;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.8rem;
+  margin-bottom: 3rem;
+  color: var(--color-primary-red);
+  text-align: center;
+  text-shadow: 0 0 1.2rem rgba(255, 0, 0, 0.7);
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.listItem {
+  background-color: var(--color-dark-deep);
+  border: 0.1rem solid var(--color-secondary-grey);
+  padding: 0;
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out, border-color 0.1s ease-out;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.listItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.2rem solid transparent;
+  transition: border-color 0.1s ease-out;
+  pointer-events: none;
+}
+
+.listItem:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.8);
+  border-color: var(--color-primary-red);
+}
+
+.listItem:hover::before {
+  border-color: var(--color-primary-red);
+  box-shadow: 0 0 1rem rgba(255, 0, 0, 0.8);
+}
+
+
+.linkWrapper {
+  color: var(--color-light-grey);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.8rem;
+  position: relative;
+  z-index: 2;
+}
+
+
+.linkText {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  transition: color 0.2s ease-out;
+  display: block;
+}
+
+
+.linkWrapper:hover .linkText {
+  color: var(--color-primary-red);
+}

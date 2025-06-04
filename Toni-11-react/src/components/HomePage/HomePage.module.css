@@ -1,0 +1,32 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+  background-color: var(--color-dark-accent);
+  border: 0.2rem solid var(--color-primary-red);
+  box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.7);
+  max-width: 70rem;
+  margin-top: 5rem;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-primary-red);
+  text-align: center;
+  text-shadow: 0 0 1.5rem rgba(255, 0, 0, 0.8);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--color-secondary-grey);
+  max-width: 60rem;
+  line-height: 1.5;
+}

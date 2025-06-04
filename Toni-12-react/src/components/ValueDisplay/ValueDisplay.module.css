@@ -1,0 +1,159 @@
+.displayContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8rem;
+  width: 80%;
+  max-width: 80rem;
+  margin-top: 6rem;
+  position: relative;
+  z-index: 4;
+}
+
+.valueCard {
+  position: relative;
+  background-color: var(--color-main-dark);
+  border: 0.2rem solid var(--color-accent-yellow);
+  padding: 0;
+  width: 30rem;
+  height: 20rem;
+  box-shadow: 0 0 1.5rem rgba(255, 193, 7, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  transform: rotate(45deg) skewX(20deg) scale(0.9);
+  cursor: pointer;
+  z-index: 0;
+}
+
+.valueCard:hover {
+  transform: rotate(45deg) skewX(20deg) scale(1);
+  box-shadow: 0 0 3rem rgba(255, 152, 0, 0.8);
+  overflow: visible;
+  z-index: 10;
+}
+
+.valueCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-accent-orange);
+  z-index: -1;
+  opacity: 0;
+  transform: rotate(45deg) skewX(20deg) scale(1.2);
+  transition: opacity 0.3s ease-out;
+}
+
+.valueCard:hover::before {
+  opacity: 0.2;
+}
+
+.valueCard > * {
+  transform: rotate(-45deg) skewX(-20deg);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 2;
+}
+
+.cardLabel {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 2rem;
+  color: #0a0a0abd;
+  background: rgb(206, 171, 14);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  user-select: none;
+  position: relative;
+  top: -3rem;
+  z-index: 100;
+}
+
+.cardData {
+  font-family: 'VT323', monospace;
+  font-size: 2.8rem;
+  color: var(--color-text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+  text-align: center;
+  user-select: text;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg) skewX(-20deg);
+  z-index: 999;
+  max-width: 30rem;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  white-space: normal;
+  word-break: break-word;
+  overflow: visible;
+  transition: all 0.3s ease-out;
+}
+
+.valueCard:hover .cardData {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 1.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.6rem rgba(255, 152, 0, 0.9);
+  color: var(--color-accent-orange);
+}
+
+.displayContainer::after {
+  content: '';
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--color-accent-yellow);
+  opacity: 0.1;
+  pointer-events: none;
+  transform: rotate(45deg);
+  animation: float-around 15s ease-in-out infinite alternate;
+  z-index: 1;
+  top: -5rem;
+  left: 50%;
+  margin-left: -5rem;
+}
+
+@keyframes float-around {
+  0% { transform: translate(0, 0) rotate(45deg); opacity: 0.1; }
+  25% { transform: translate(10rem, 5rem) rotate(60deg); opacity: 0.15; }
+  50% { transform: translate(0, 10rem) rotate(75deg); opacity: 0.2; }
+  75% { transform: translate(-10rem, 5rem) rotate(90deg); opacity: 0.15; }
+  100% { transform: translate(0, 0) rotate(45deg); opacity: 0.1; }
+}
+
+
+@media (max-width: 768px) {
+  .displayContainer {
+    padding-top: 7rem;
+    min-width: 100%;
+    margin: 0 auto;
+    gap: 12rem;
+  }
+}
